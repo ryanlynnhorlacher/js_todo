@@ -1,0 +1,48 @@
+<html>
+  <head>
+  </head>
+  <body>
+  <h1>Stuff to do</h1>
+
+    <button id='new_list'>New List</button>
+
+    <ul id='list'>
+    </ul>
+
+    <ul id='items'>
+    </ul>
+    <div id='list_form_div' class='no-display'>
+    	<form id=list_form>
+    		<div>
+    			<label for='list_name'>List name</label>
+    			<input id='list_name' type='text' name='list[name]' placeholder='List name' required>
+    		</div>
+    		<input type="submit">
+    	</form>
+    </div>
+
+    <div id='item_form_div' class='no-display'>
+    	<form id='item_form'>
+    			<div>
+    				<label for='item_name'>Item name</label>
+    				<input id='item_name' type="text" name="item[name]" placeholder='Item name' required>
+    			</div>
+    			<div>
+    				<label for='item_due_date'>Item due date</label>
+    				<input id='item_due_date' type="date" name="item[dueDate]">
+    			</div>
+    			<div>
+    				<label for='checkbox'>Completed?</label>
+    				<input id='checkbox' type="checkbox" name="item[completed]">
+    			</div>
+    			<div>
+    				<input id='list_identifier' type='hidden' name='item[list]'>
+    			<button id ='form_submit'>Submit</button>
+    	</form>
+    </div>
+  	<link rel="stylesheet" type="text/css" href="/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/babel" src='main.js'></script>
+  </body>
+</html>
